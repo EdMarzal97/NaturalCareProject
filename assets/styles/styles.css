@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+.carousel-item {
+    height: 50vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.product{
+    height: 500px;
+    width: 90%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product .card{
+    transition: all .5s ease;
+    border-radius: 20px;
+    margin: .5rem;
+}
+
+.product .card:hover{
+    transform: scale(1.04);
+}
+
+@media (max-width: 780px) {
+    .product, .paragraph{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+        align-items: center;
+    }
+}
+
+.product img {
+    height: 300px;
+}
+
+#row{
+    margin: 1rem;
+}
+
+.picture img{
+    transition: all .5s ease;
+}
+
+.picture img:hover{
+    transform: scale(1.05);
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+.title{
+    text-align: center;
+    margin: 2rem;
+}
+
+.title_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 353px;
+    flex-direction: column;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph img{
+    height: 250px;
+    border-radius: 22px;
+    margin: 2rem;
+}
